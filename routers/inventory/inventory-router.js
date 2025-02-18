@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 let inventory = [];
@@ -35,4 +35,4 @@ router.delete('/:id', (req, res) => {
     res.json({ message: `Item with ID ${id} deleted` });
 });
 
-module.exports = router;
+export default router;
